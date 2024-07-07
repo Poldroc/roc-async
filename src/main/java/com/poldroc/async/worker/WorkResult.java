@@ -25,6 +25,30 @@ public class WorkResult<V> {
         this.ex = ex;
     }
 
+    public Exception getEx() {
+        return ex;
+    }
+
+    public void setEx(Exception ex) {
+        this.ex = ex;
+    }
+
+    public V getResult() {
+        return result;
+    }
+
+    public void setResult(V result) {
+        this.result = result;
+    }
+
+    public ResultState getResultState() {
+        return resultState;
+    }
+
+    public void setResultState(ResultState resultState) {
+        this.resultState = resultState;
+    }
+
     public static <V> WorkResult<V> defaultResult() {
         return new WorkResult<>(null, ResultState.DEFAULT);
     }

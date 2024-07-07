@@ -1,5 +1,7 @@
 package com.poldroc.async.wrapper;
 
+import java.util.Objects;
+
 /**
  * wrapping of dependent wrappers
  * that is, the step before referencing the work of this class
@@ -46,5 +48,22 @@ public class DependWrapper {
                 "dependWrapper=" + dependWrapper +
                 ", must=" + must +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        DependWrapper that = (DependWrapper) o;
+        return must == that.must && Objects.equals(dependWrapper, that.dependWrapper);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(dependWrapper, must);
     }
 }
