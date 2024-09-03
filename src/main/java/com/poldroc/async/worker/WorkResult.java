@@ -4,7 +4,7 @@ package com.poldroc.async.worker;
  * the result of the work
  *
  * @author Poldroc
- * @date 2024/6/27
+ * @since 2024/6/27
  */
 
 public class WorkResult<V> {

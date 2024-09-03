@@ -6,7 +6,7 @@ import com.poldroc.async.worker.WorkResult;
  * each execution unit will call back this interface after finished</p>
  *
  * @author Poldroc
- * @date 2024/6/27
+ * @since 2024/6/27
  */
 
 public interface ICallback<T, V> {

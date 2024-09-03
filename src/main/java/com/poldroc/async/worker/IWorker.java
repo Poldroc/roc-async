@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * each minimal execution unit needs to implement this interface
  * @author Poldroc
- * @date 2024/6/20
+ * @since 2024/6/20
  */
 
 public interface IWorker<T, V> {
